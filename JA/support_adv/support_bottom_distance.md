@@ -1,3 +1,15 @@
+サポートボトム距離
+====
+この設定により、サポートの底面とモデルの間の距離を調整できます。この距離はサポートがモデルに接している部分です。
+
+![ダークブルーのモデルとライトブルーのサポートの間の底面距離](../images/support_top_bottom_distance.svg)
+
+サポートが単純にモデルの上に印刷されると、両者は非常に強く固定されます。これを回避するためには、両者の間に適度な距離を保つことが良いでしょう。そうすることで、サポートを取り外すのが容易になり、プリントに対する傷も少なくなります。ただし、距離を過度に大きくすると、サポートが不安定になる可能性があります。
+
+もし、サポート材料が溶解性のものであるなら、この距離を極めて小さくしておいても問題ありません。それによってサポートを取り外すことが困難になることはなく、また傷も残りません。
+
+---
+
 Support Bottom Distance
 ====
 With this setting you can adjust the distance between the bottom side of the support and the model, where the support rests on the model.

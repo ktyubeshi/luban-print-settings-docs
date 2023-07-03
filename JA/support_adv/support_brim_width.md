@@ -1,3 +1,14 @@
+サポートブリムの幅
+====
+この設定は、サポートブリムの幅を調整します。サポートブリムが広いほど、サポートエリア内に描かれる輪郭が多くなり、接着性が向上します。
+
+![2mm幅](../images/support_brim_2mm.png)
+![4mm幅](../images/support_brim_4mm.png)
+
+ブリムが広いほど、サポートのビルドプレートへの接着性が向上し、サポートの歪みが減少します。その結果、サポートはよりしっかりと立つようになり、プリントの信頼性が向上します。
+
+---
+
 Support Brim Width
 ====
 This setting adjusts the width of the support brim. With a wider support brim, more contours will be drawn inside the support area to give better adhesion.

@@ -1,3 +1,19 @@
+サポートフロアフロー
+====
+### **説明**
+この設定は、サポートフロアのフローレートを調整します。
+
+### **使用法**
+サポートフロアのフローレートは、その他のサポートのフローレートとは別に調整することができます。
+
+サポート底部でのフローレートの調整は、押出量やモデルとサポートの間の接着問題を修正するための一時的な方法です。同じ効果は、サポートフロアの[ライン幅](../resolution/support_bottom_line_width.md)や[ライン間隔](../support_adv/support_bottom_line_distance.md)を調整することで得られますが、フローレートを調整する方が直感的かもしれません。
+
+押出量に問題がある場合、[印刷速度](../speed/speed_support_bottom.md)、[温度](material_print_temperature.md)、および[ライン幅](../resolution/support_bottom_line_width.md)を見る方が良いかもしれません。おそらく、サポートフロアのフローレートと層の他の構造体との間に大きな差があるのかもしれません。また、ライン幅が細すぎて適切に押し出すことができないかもしれません。
+
+インターフェースが[異なる材料](../support/support_interface_extruder_nr.md)で印刷される場合、一般的な問題は、インターフェースが印刷される材料が適切に流れ始めるのに十分な時間がないことです。これは、[プライムタワー](../dual/prime_tower_enable.md)を使用するか、[サポートフロアの面積](../support_adv/support_bottom_offset.md)を増やすことで修正できます。
+
+---
+
 Support Floor Flow
 ====
 ### **Description**

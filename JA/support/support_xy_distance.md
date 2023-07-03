@@ -1,3 +1,25 @@
+サポートX/Y距離
+====
+これは、サポートとモデルの間に横方向にどれだけの距離を保つ必要があるかを示しています。
+
+![サポートとモデルの間の水平方向の隙間](../images/support_xy_distance.png)
+
+水平距離は、サポートがモデルに当たって表面に傷をつけるのを防ぐためのものです。しかし、これによりモデルとサポート構造の間の距離が大きくなり、オーバーハングがある部分にサポートがない状態になります。
+
+X/Y距離とZ距離
+----
+X/Y距離とZ距離は互いに競合する可能性があります。この場合、[サポート距離優先](support_xy_overrides_z.md)設定を用いて、どちらを優先するかを決定することができます。
+
+![X/YがZを上書き](../images/support_xy_overrides_z.svg)
+
+X/YがZを上書きする場合、X/Y距離を保持し、それがZ距離が大きすぎることを意味してもです。Z距離は最小限に保たれます。
+
+![ZがX/Yを上書き](../images/support_z_overrides_xy.svg)
+
+ZがX/Yを上書きする場合、Z距離を保持し、それがX/Y距離が短すぎることを意味してもです。X/Y距離は、Z距離が影響を及ぼさないサポートの上部から離れたところでしか影響を持ちません。
+
+---
+
 Support X/Y Distance
 ====
 This indicates how much distance must be kept horizontally between the support and the model.

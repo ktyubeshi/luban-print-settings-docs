@@ -1,23 +1,23 @@
-Model Structure
+モデル構造
 ====
-This setting allows you to choose which type of structure you want to print.
+この設定では、印刷する構造の種類を選択することができます。
 
-Normal Structure
+通常
 ----
-By default, Luban uses Normal Structure to print the model. With this selection, all parts of the model will be printed integrally.
+デフォルトでは、Lubanはモデルの印刷に法線構造を使用します。この選択により、モデルのすべてのパーツが一体的に印刷されます。
 
-The stronger the model is, the longer printing time it takes and more material it consumes. On the contrary, the thinner the model is, the shorter printing time it takes and less material it consumes.
+モデルの強度が高ければ高いほど、印刷にかかる時間は長くなり、消費する材料も多くなります。逆に、モデルが薄ければ薄いほど、印刷にかかる時間は短くなり、消費する材料も少なくなります。
 
-Vase Structure
+花瓶
 ----
-Vase Structure, also called *Spiralize Outer Contour*/*Vase Mode*, prints only the bottom layer and the outer wall of the model. The structure of the print is similar to that of a vase, with a bottom and a wall, but with no infill or top cover.
+花瓶構造は *外側の輪郭を螺旋状にする* / *花瓶モード* とも呼ばれ、モデルの底面と外壁のみをプリントします。プリントの構造は花瓶に似ており、底と壁がありますが、インフィルや上蓋はありません。
 
-Crucially, height of the nozzle will gradually increase over the course of a layer. This way a spiral is created following the contour of the model. There will be no significant toolhead lift from one layer to another, because the nozzle is gradually moving up towards the next layer. When printing layer by layer, the nozzle normally needs to move from one layer to the next. This movement causes the nozzle to stand almost still in XY direction for a fraction of a second, which leaves a seam on the surface called the Z seam. Spiralising the model can prevent that.
+重要なのは、ノズルの高さが積層の過程で徐々に高くなることです。こうすることで、モデルの輪郭に沿ったスパイラルが生まれます。ノズルが次のレイヤーに向かって徐々に上がっていくため、レイヤー間でツールヘッドが大きく浮き上がることはありません。レイヤーごとに印刷する場合、ノズルは通常、あるレイヤーから次のレイヤーへと移動する必要があります。この移動により、ノズルはXY方向でほんの一瞬静止し、Zシームと呼ばれる継ぎ目が表面に残ります。モデルをスパイラル状にすることで、これを防ぐことができます。
 
-Vase Structure has the following effects:
-* Prints extremely fast.
-* The surface becomes very smooth. There is no [Z seam](../troubleshooting/seam.md) any more where it moved to the next layer.
-* The model will not be very strong. If the model is too big, it tends to split due to [warping](../troubleshooting/warping.md).
-* It is difficult to get the print to be watertight if it is large.
+花瓶構造には次のような効果があります。:
+* 印刷が極めて速い
+* 表面がとてもなめらかになる。 次のレイヤーに移動することでできる[Zシーム](../troubleshooting/seam.md) がなくなります。
+* モデルの強度はあまり高くなりません。模型が大きすぎると、反りによって[割れやすくなります](../troubleshooting/warping.md)。
+* プリントが大きいと水密性を確保するのが難しくなります。
 
-Vase Structure will not work well with prints with many horizontal surfaces. It doesn't handle overhangs at all, and doesn't print top surfaces so nothing will be able to lean on a horizontal surface. It also doesn't work well when there are multiple parts on a layer.
+花瓶構造は、水平面の多いプリントではうまく機能しません。オーバーハングをまったく処理しませんし、上面を印刷しないので、水平面に何も傾きません。また、1つのレイヤーに複数のパーツがある場合もうまく機能しません。

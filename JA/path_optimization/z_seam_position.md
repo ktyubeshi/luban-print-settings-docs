@@ -1,3 +1,18 @@
+Zシーム位置
+====
+Zシームの位置合わせがユーザー指定に設定されている場合、シームはこの設定により指定された相対位置に配置されます。
+
+![シームは左側に位置しています](../images/z_seam_x_left.png)
+![シームは後側に位置しています](../images/z_seam_y_back.png)
+![シームは右側に位置しています](../images/z_seam_x_right.png)
+![シームは前側に位置しています](../images/z_seam_y_front.png)
+
+Zシームの位置をモデルに対して調整するための8つのオプションが利用可能です。最終的なプリントでシームが見えにくい位置を選ぶのが最善です。内側の角にある位置が良い選択になるでしょう。しかし、そのような角が利用できない場合は、シームを後処理で簡単に切り取ったりサンディングしたりできる位置を選ぶこともできます。
+
+シームは実際には、[ZシームX](z_seam_x.md)および[ZシームY](z_seam_y.md)の設定によって示される位置にできるだけ近く配置されます。これは、それらの座標をより直感的に設定する便利な設定です。
+
+---
+
 Z Seam Position
 ====
 If Z Seam Alignment is set to User Specified, the seam will be placed in the relative position specified by this setting.

@@ -1,3 +1,17 @@
+ジャーク制御を有効にする
+====
+ジャークは、ノズルがコーナーを抜ける速度を決定します。ジャーク制御が有効になっている場合、Lubanは印刷中のさまざまな部分で適用するジャークの量を制御します。無効になっている場合、プリンタファームウェアがジャーク値を選択します。
+
+![速度、加速度、ジャークの関係](../images/velocity_acceleration_jerk.svg)
+
+**3Dプリントのジャークと物理学のジャークは異なります。** 「ジャーク」という用語はMarlinによって導入されました。そこでは、パスを完璧に追従するという固有の問題を回避するためのワークアラウンドとして設計されました。ノズルはパスから外れることが許可されていない（理論上）ので、ノズルはすべてのコーナーで0mm / sに減速する必要があります。これはあなたの印刷を台無しにするだろう、なぜならコーナーごとに0mm / sに減速するとブロブが発生するからです。コーナーを省略するための曲線を作成することは許可されていませんし、オーバーシュートもできません。代わりに、Marlinはモーションのすべてのコーナーで速度ベクトルの瞬時の変化を許可します。この速度ベクトルの変化の量は「ジャーク」と呼ばれます。
+
+したがって、ジャークはモーションのすべてのコーナーで適用される最大の瞬時変化の速度です。
+
+jerk_enabled.md
+
+-----
+
 Enable Jerk Control
 ====
 Jerk determines the speed at which the nozzle can go through corners. If jerk control is enabled, Luban will control how much jerk to apply during various parts of the print. If it's disabled, the printer firmware will choose a jerk value. 

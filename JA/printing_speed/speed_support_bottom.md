@@ -1,4 +1,26 @@
 Support Floor Speed
+===
+**概要**
+
+この設定は、[サポートフロアが有効になっている](../support_adv/support_bottom_enable.md)場合、サポートの底面を印刷する速度を設定します。
+
+![Various structures printed at different speeds](../images/speed_difference.png)
+
+高いサポートフロアスピードは、一部の印刷時間を節約できます。
+
+**使用法**
+
+この設定の効果は大きく異なります。一部の材料、特に冷却が早く、[サポート底部距離](../support_adv/support_bottom_distance.md)が大きい材料では、より高いスピードでサポートとモデルとの接着性が高まります。この効果は橋渡しに似ています：より高いスピードでは、材料が慎重に懸濁されず、ツールヘッド上のファンによって冷却される時間がなくなります。これは通常あなたが望まないものです、なぜならサポートが表面に大きな印を残すからです。
+
+他の材料では、より高いスピードで材料を置く力が減少し、流出する余地がなくなります。この効果はベッド接着に似ています。サポートフロアの開始と終了時に起こる流量の変化の限界に達するまで、より高いスピードは有利です。
+
+サポートフロアがモデルに非常に近い場合（PVAなどの溶解性サポート材料の場合など）、サポートフロアスピードを上げると、ノズルがモデルに飛び込んで表面を微妙に傷つける可能性があります。
+
+speed_support_bottom.md
+
+-----
+
+Support Floor Speed
 ====
 ### **Description**
 This setting configures the speed at which the bottom side of the support is printed, if [Support Floor is enabled](../support_adv/support_bottom_enable.md).

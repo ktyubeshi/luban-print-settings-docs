@@ -1,3 +1,14 @@
+サポートトップ距離
+====
+この設定は、モデルの張り出し面の上部とサポートの間に保つ距離を設定します。
+
+![ダークブルーモデルとライトブルーサポートの間のトップ距離](../images/support_top_bottom_distance.svg)
+![モデルとサポートの間に垂直距離が保たれています](../images/support_z_distance.png)
+
+サポートトップ距離は、モデルがサポートに接する部分でサポートがモデルにどれほどよく密着するかに最も影響を与える要素です。距離を増やすと、印刷後にサポートを取り除くことが容易になりますが、それは印刷オブジェクトに対して密着しないようにするためです。しかし、それはサポートに掛けるまでの数層が下がることを許容するため、張り出しを悪く見せることもあります。
+
+---
+
 Support Top Distance
 ====
 This setting configures how much distance is kept between the top of the support and the overhung surface of the model.

@@ -1,3 +1,14 @@
+Z シームの相対位置
+====
+Z シームの配置がユーザー指定に設定されている場合、シームが配置されるべき座標を入力することができます。通常、これらの座標はビルドプレート上の Z シームの絶対位置を指定します。この設定が有効になっている場合、これらの座標はモデルの位置に対して相対的に取られます。
+
+![無効: 座標はビルドプレートの中心にある絶対位置を指すため、すべての青い線が中央に向かっています](../images/z_seam_relative_disabled.png)
+![有効: 座標はモデルに相対的であるため、すべてのモデルが同じ角に青い線を持つことになります](../images/z_seam_relative_enabled.png)
+
+モデルがビルドプレート上で複製された場合、この設定は、Z シームが複製された各部品で完全に同じ位置に配置されるようになり、それらがビルドプレート上の同じ点を指すのではなくなります。これにより、ビルドプレート上での位置に関係なく、すべてのコピーを完全に同じ方法で印刷することができます。
+
+---
+
 Z Seam Relative
 ====
 If Z Seam Alignment is set to User Specified, you can enter coordinates for where the seam must be located. Normally those coordinates specify the absolute position of Z seam on the build plate. If this setting is enabled, those coordinates will be taken relative to the position of the model.
